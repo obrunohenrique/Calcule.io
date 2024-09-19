@@ -6,16 +6,17 @@
     --cor-secundaria: #8906e6;
 }
 
-.shape-underline {
-    visibility: visible;
-}
-
 main {
     width: 100%;
     min-height: max-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.shape-underline {
+    visibility: visible;
 }
 
 .calculadora {

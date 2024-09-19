@@ -6,7 +6,7 @@
     <title>Calculadora online</title>
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/calc.css">
+    <link rel="stylesheet" href="../assets/css/imc.css">
     <link rel="stylesheet" href="../assets/css/header.css">
 
 </head>
@@ -18,13 +18,13 @@
                 <ul>
                     <li>
                         <div>
-                        <a href="">calculadora online</a>
+                        <a href="./calculadora.html">calculadora online</a>
                         <div class="shape-underline"></div>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <a href="./imc.html">calcular imc</a>
+                            <a href="/">calcular imc</a>
                             <div class="shape-underline"></div></div>
                         </li>
                     <li>
@@ -38,30 +38,38 @@
         </nav>
     </header>
     <main>
-        <div class="calculadora">
-            <p id="visor">0</p>
-            <div id="botoes">
-                <div class="cinza botao invisible">AC</div>
-                <div class="cinza botao invisible">+/-</div>
-                <div class="cinza botao invisible">%</div>
-                <div class="amarelo botao">/</div>
-                <div class="botao num">7</div>
-                <div class="botao num">8</div>
-                <div class="botao num">9</div>
-                <div class="amarelo botao">X</div>
-                <div class="botao num">4</div>
-                <div class="botao num">5</div>
-                <div class="botao num">6</div>
-                <div class="amarelo botao">--</div>
-                <div class="botao num">1</div>
-                <div class="botao num">2</div>
-                <div class="botao num">3</div>
-                <div class="amarelo botao">+</div>
-                <div class="zero botao num">0</div>
-                <div class="vígula botao num">,</div>
-                <div class="amarelo botao invisible">=</div>
+        <form>
+            <div class="container-sexos">
+                <div class="card-sexos">
+                    <img class="icon-sexo" src="../assets/img/icons/man.png" alt="homem">
+                    <p>Homem</p>
+                </div>
+                <div class="card-sexos">
+                    <img class="icon-sexo" src="../assets/img/icons/woman.png" alt="mulher">
+                    <p>Mulher</p>
+                </div>
             </div>
-        </div>
+            
+            <div class="container-inputs">
+                <div class="container-input">
+                    <input type="number" name="peso" id="peso" placeholder="Seu peso em Kilogramas(Kg)">
+                    <div class="shape"></div>
+                </div>
+                
+                <div class="container-input">
+                    <input type="number" name="altura" id="altura" placeholder="Sua altura em metros(Ex: 1.73)">
+                    <div class="shape"></div>
+                </div>
+            </div>
+            
+
+            <div class="container-buttons">
+                <button class="primary-button">Calcular</button>
+                <button class="secundary-button">Limpar</button>
+            </div>
+            
+
+        </form>
     </main>
 
     <footer><p>&copy todos os direitos reservados. site criado por <a target="_blank" rel="external" href="https://www.github.com/obrunohenrique">@obrunohenrique</a></p></footer>
