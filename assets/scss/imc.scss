@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+@use "variaveis";
+@use "header.scss";
+@use "reset.scss";
+@use "footer.scss";
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+main {
+    padding: 48px;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    form {
+
+        .container-sexos {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .card-sexos {
+                padding: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .icon-sexo{
+                    width: 100px;
+                }
+            }
+        }
+
+        .container-inputs {
+            width: 450px;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 6px;
+
+            .container-input {
+                min-height: 45px;
+                height: max-content;
+                width: 100%;
+            }
+
+            input {
+                color: variaveis.$color-white;
+                background-color: variaveis.$color-background;
+                height: 44px;
+                width: 100%;
+                border: 0;
+
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        .container-buttons {
+            margin-top: 12px;
+            display: flex;
+            flex-flow: row wrap;
+            gap: 12px;
+
+            button {
+                cursor: pointer;
+                color: variaveis.$color-white;
+                background: none;
+                padding: 12px 32px;
+                border-radius: 24px;
+
+                @mixin style-button($border, $transition) {
+                    border: $border;
+                    transition: $transition;
+                }
+
+                &.primary-button {
+                    @include style-button(1px solid variaveis.$color-primary, background-color .3s)
+                }
+
+                &.secundary-button {
+                    @include style-button(1px solid variaveis.$color-secundary, background-color .3s)
+                }
+            }
+        }
+    }
+}
+
+@mixin hover-button($background, $border) {
+    background: $background;
+    border: $border;
+}
+
+button.primary-button:hover {
+    @include hover-button(variaveis.$color-primary, 1px solid variaveis.$color-primary)
+}
+
+button.secundary-button:hover {
+    @include hover-button(variaveis.$color-secundary, 1px solid variaveis.$color-secundary)
+}

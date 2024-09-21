@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@use "variaveis";
+@use "header.scss";
+@use "reset.scss";
+@use "footer.scss";
+
+
+
+.section1 {
+    width: 100%;
+    height: max-content;
+    background: variaveis.$color-background url(../img/pexels-karolina-grabowska-4476375.jpg) no-repeat center center;
+    background-size: cover;
+
+    .cobertura {
+        padding: 0 48px;
+        width: 100%;
+        height: calc(100vh - 12vh);
+        background-color: variaveis.$color-cobertura;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container-msg {
+            display: flex;
+            font-size: 1.1em;
+            flex-direction: column;
+            gap: 48px;
+            text-align: center;
+            max-width: 700px;
+        }
+    }
+}
+
+.section2 {
+    padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    min-height: 500px;
+    background: variaveis.$color-background;
+
+    .img-sections {
+        max-width: 400px;
+        border-top-left-radius: 200px;
+        border-bottom-left-radius: 200px;
+        border-top-right-radius: 96px;
+        border-bottom-right-radius: 300px;
+    }
+
+    .container-missao{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 700px;
+
+        p {
+            text-indent: 12px;
+        }
+    }
+}
+
+.section3 {
+    padding: 48px;
+
+    aside {
+        border: 1px dashed variaveis.$color-secundary;
+        border-radius: 48px;
+        padding: 48px;
+
+        .container-redes {
+            margin-top: 12px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 24px;
+
+            .img-sections {
+                max-width: 400px;
+                border-top-right-radius: 200px;
+                border-bottom-right-radius: 200px;
+                border-top-left-radius: 128px;
+                border-bottom-left-radius: 300px;
+            }
+
+            .container-missao {
+                
+                .redes {
+                    display: flex;
+                    gap: 24px;
+
+                    .social-media {
+                        width: 35px;
+                    }                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 899px) {
+    
+    .container-msg {
+        font-size: .8em;
+    }
+
+    .section2 {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .img-sections {
+        max-width: 300px;
+    }
+
+    .container-missao {
+        font-size: .8em;
+    }
+
+    .section3 {
+        padding: 24px;
+
+        .container-redes {
+            font-size: .8em;
+            flex-flow: row wrap;
+            justify-content: center;
+            gap: 48px;
+        }
+
+        .img-sections {
+            max-width: 250px;
+        }
+    }
+}
