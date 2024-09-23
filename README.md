@@ -1,8 +1,8 @@
 # Calcule.io
 
-Calcule.io é um website você encontra diversas calculadoras e conversores práticos para facilitar o seu dia a dia. Desde calcular o IMC até converter moedas e realizar cálculos convencionais, nosso site oferece uma experiência simples, rápida e eficiente. Tudo em um só lugar, pensado para você otimizar seu tempo com precisão e facilidade.
+Calcule.io é um website onde você encontra diversas calculadoras e conversores práticos para facilitar o seu dia a dia. Desde calcular o IMC até converter moedas e realizar cálculos convencionais, nosso site oferece uma experiência simples, rápida e eficiente. Tudo em um só lugar, pensado para você otimizar seu tempo com precisão e facilidade.
 
-A ideia de construir esse projeto surgiu com a proposição de um simples exercício para a  contrução de uma calculadora em uma aula do FAP-softex Recife, mas que para mim acabou tomando uma maior proporção.
+A ideia de construir esse projeto surgiu com a proposição de um simples exercício para a contrução de uma calculadora em uma aula do FAP-softex Recife, mas que para mim acabou tomando uma maior proporção.
 
 <h2>Tecnologias utilizadas</h2>
 
