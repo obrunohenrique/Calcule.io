@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora online</title>
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/imc.css">
-    <link rel="stylesheet" href="../assets/css/header.css">
 
+    <link rel="stylesheet" href="../assets/css/imc.css">
 </head>
 <body>
     <header>
@@ -38,13 +36,13 @@
         </nav>
     </header>
     <main>
-        <form>
+        <div id="form">
             <div class="container-sexos">
-                <div class="card-sexos">
+                <div class="card-sexos" onclick="homem_mulher(this)">
                     <img class="icon-sexo" src="../assets/img/icons/man.png" alt="homem">
                     <p>Homem</p>
                 </div>
-                <div class="card-sexos">
+                <div class="card-sexos" onclick="homem_mulher(this)">
                     <img class="icon-sexo" src="../assets/img/icons/woman.png" alt="mulher">
                     <p>Mulher</p>
                 </div>
@@ -52,28 +50,31 @@
             
             <div class="container-inputs">
                 <div class="container-input">
-                    <input type="number" name="peso" id="peso" placeholder="Seu peso em Kilogramas(Kg)">
+                    <input type="number" name="peso" id="peso" placeholder="Seu peso em Kilogramas(Kg)" step="0.01">
                     <div class="shape"></div>
                 </div>
                 
                 <div class="container-input">
-                    <input type="number" name="altura" id="altura" placeholder="Sua altura em metros(Ex: 1.73)">
+                    <input type="number" name="altura" id="altura" placeholder="Sua altura em metros(Ex: 1.73)" step="0.01">
                     <div class="shape"></div>
                 </div>
             </div>
             
 
             <div class="container-buttons">
-                <button class="primary-button">Calcular</button>
-                <button class="secundary-button">Limpar</button>
+                <button class="primary-button" onclick="calcular_imc()">Calcular</button>
+                <button class="secundary-button" onclick="limparCampos()">Limpar</button>
             </div>
-            
+        </div>
 
-        </form>
+        <section class="container-result">
+            <p class="result"></p>
+            <p class="indice"></p>
+        </section>
     </main>
 
     <footer><p>&copy todos os direitos reservados. site criado por <a target="_blank" rel="external" href="https://www.github.com/obrunohenrique">@obrunohenrique</a></p></footer>
 
-    <script src="../dist/calc.js"></script> 
+    <script src="../dist/imc.js"></script> 
 </body>
 </html>

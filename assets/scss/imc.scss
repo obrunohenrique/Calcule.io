@@ -20,10 +20,15 @@ main {
     height: 70vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     align-items: center;
+    gap: 100px;
 
-    form {
+    #form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
 
         .container-sexos {
             width: 100%;
@@ -32,11 +37,18 @@ main {
             align-items: center;
 
             .card-sexos {
-                padding: 12px;
+                cursor: pointer;
+                padding: 20px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                border: 1px solid variaveis.$color-background;
+
+                &:hover {
+                    border: 1px solid variaveis.$color-secundary;
+                    border-radius: 12px;
+                }
 
                 .icon-sexo{
                     width: 100px;
@@ -97,6 +109,16 @@ main {
                 }
             }
         }
+    }
+
+    .result {
+        color: variaveis.$color-secundary;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .indice {
+        font-size: 24px;
     }
 }
 
