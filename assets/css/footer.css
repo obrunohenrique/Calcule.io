@@ -1,0 +1,19 @@
+footer {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+}
+footer p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+footer p a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=footer.css.map */

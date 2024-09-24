@@ -33,6 +33,7 @@ header nav #botton-header ul {
   list-style-type: none;
 }
 header nav #botton-header ul li a {
+  color: #ffffff;
   text-decoration: none;
 }
 header nav #botton-header ul li a:visited {
@@ -104,15 +105,24 @@ footer {
   text-align: center;
   font-weight: 300;
 }
-footer a {
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
-}
-footer a:visited {
+footer p a {
   text-decoration: none;
   color: #ffffff;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+footer p a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button.primary-button:hover {
+  background-color: #050deb;
+}
+
+button.secundary-button:hover {
+  background-color: #8906e6;
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -130,7 +140,7 @@ main {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 100px;
 }
@@ -186,13 +196,14 @@ main #form .container-inputs input:focus {
 main #form .container-buttons {
   margin-top: 12px;
   display: flex;
+  justify-content: center;
   flex-flow: row wrap;
   gap: 12px;
 }
 main #form .container-buttons button {
   cursor: pointer;
   color: #ffffff;
-  background: none;
+  background-color: #100d28;
   padding: 12px 32px;
   border-radius: 24px;
 }
@@ -204,23 +215,19 @@ main #form .container-buttons button.secundary-button {
   border: 1px solid #8906e6;
   transition: background-color 0.3s;
 }
-main .result {
+main .container-result .result {
   color: #8906e6;
   font-size: 48px;
   font-weight: 700;
 }
-main .indice {
+main .container-result .indice {
   font-size: 24px;
 }
 
-button.primary-button:hover {
-  background: #050deb;
-  border: 1px solid #050deb;
-}
-
-button.secundary-button:hover {
-  background: #8906e6;
-  border: 1px solid #8906e6;
+@media screen and (max-width: 899px) {
+  main #form .container-inputs {
+    width: 300px;
+  }
 }
 
 /*# sourceMappingURL=imc.css.map */

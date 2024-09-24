@@ -4,6 +4,11 @@ function calcular_imc():boolean {
     let input_altura:HTMLInputElement = document.querySelector("input#altura") as HTMLInputElement
     let altura:number = Number(input_altura.value)
 
+    if (input_peso.value == '' || input_altura.value == '') {
+        window.alert("preencha todos os campos para calular.")
+        return false
+    }
+
     let imc:number = peso / (altura**2)
     let imc_formatado = imc.toFixed(2)
     imc = Number(imc_formatado)

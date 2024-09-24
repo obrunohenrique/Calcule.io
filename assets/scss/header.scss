@@ -38,6 +38,7 @@ header {
                 li {
 
                     a {
+                        color: variaveis.$color-white;
                         text-decoration: none;
                 
                         &:visited {
@@ -67,4 +68,3 @@ header {
         }
     }
 }
-

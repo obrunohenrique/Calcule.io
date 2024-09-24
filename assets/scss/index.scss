@@ -74,9 +74,9 @@
         .container-redes {
             margin-top: 12px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
-            gap: 24px;
+            gap: 100px;
 
             .img-sections {
                 max-width: 400px;
@@ -103,17 +103,21 @@
 
 @media screen and (max-width: 899px) {
     
-    .container-msg {
-        font-size: .8em;
+    .section1 {
+        .cobertura {
+            .container-msg {
+                font-size: .8em;
+            }
+        }
     }
 
     .section2 {
         flex-flow: row wrap;
         justify-content: center;
-    }
 
-    .img-sections {
-        max-width: 300px;
+        .img-sections {
+            max-width: 250px;
+        }
     }
 
     .container-missao {
@@ -123,15 +127,17 @@
     .section3 {
         padding: 24px;
 
-        .container-redes {
-            font-size: .8em;
-            flex-flow: row wrap;
-            justify-content: center;
-            gap: 48px;
+        aside {
+            .container-redes {
+                font-size: .8em;
+                flex-flow: row wrap;
+                justify-content: center;
+                gap: 48px;
+            }
         }
+    }
 
-        .img-sections {
-            max-width: 250px;
-        }
+    #img-aside {
+        width: 250px;
     }
 }
